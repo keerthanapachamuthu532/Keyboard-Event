@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>TypingTest.com</h1>
+        </header>
+        <div class="main">
+            <div class="intro active">
+                <input type="text" id="name" placeholder="Enter your name">
+                <p class="timing-label">Select the timing:</p>
+                <div class="timers">
+                    <label><input type="radio" name="time" value="30"> 30 sec</label>
+                    <label><input type="radio" name="time" value="45"> 45 sec</label>
+                    <label><input type="radio" name="time" value="60"> 60 sec</label>
+                </div>
+                <button id="startTest">Start Test</button>
+            </div>
+            <div class="test" id="test">
+                <div class="reset-container">
+                    <button id="resetTest">Reset Test</button>
+                </div>
+                <div class="status">
+                    <span id="timer">Timer: 00</span>
+                    <span id="mistakes">Mistakes: 0</span>
+                </div>
+                <div id="content"></div>
+                <textarea id="typingBox" placeholder="Start typing..." disabled></textarea>
+                <div class="controls">
+                    <button id="stopTest">Stop Test</button>
+                    <button id="restartTest">Restart Test</button>
+                    <button id="showResult">Show Result</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('person-typing-on-keyboard.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background-color: rgba(224, 183, 183, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Added margin-top for better visibility */
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+    color: rgb(195, 136, 136); /* Change according to background */
+    font-size: 2em; /* Increase font size */
+}
+
+.intro, .test {
+    display: none;
+}
+
+.intro.active, .test.active {
+    display: block;
+}
+
+#name {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1.2em;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.timing-label {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.timers {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.timers label {
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(198, 96, 96);
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: rgb(218, 145, 135);
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#content {
+    background-color: rgb(222, 149, 149);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    min-height: 100px;
+}
+
+#typingBox {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.reset-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#resetTest {
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
